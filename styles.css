@@ -176,6 +176,7 @@ a {
   padding: var(--spacing-3xl) var(--spacing-lg);
   transition: right var(--transition-slow);
   box-shadow: -10px 0 50px rgba(0, 0, 0, 0.5);
+  overflow-y: auto;
 }
 
 .mobile-menu.active {
@@ -186,14 +187,14 @@ a {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: var(--spacing-md);
+  gap: var(--spacing-sm);
 }
 
 .menu-link {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   font-weight: 600;
   color: var(--color-text-primary);
-  padding: var(--spacing-sm);
+  padding: var(--spacing-xs) var(--spacing-sm);
   border-radius: var(--radius-sm);
   transition: var(--transition-base);
   display: block;
@@ -208,12 +209,12 @@ a {
 .menu-divider {
   height: 1px;
   background: rgba(124, 58, 237, 0.2);
-  margin: var(--spacing-sm) 0;
+  margin: var(--spacing-xs) 0;
 }
 
 .but-link {
   color: var(--color-purple-light);
-  font-size: 1rem;
+  font-size: 0.95rem;
 }
 
 /* Hero Section */
@@ -867,165 +868,4 @@ a {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-purple-bright);
-}
-
-/* Desktop Navigation */
-.desktop-nav {
-  display: none;
-  list-style: none;
-  flex-direction: row;
-  align-items: center;
-  gap: var(--spacing-md);
-  margin: 0;
-  padding: 0;
-}
-
-.desktop-nav .nav-link {
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: var(--color-text-secondary);
-  padding: var(--spacing-xs) var(--spacing-sm);
-  border-radius: var(--radius-sm);
-  transition: var(--transition-base);
-  white-space: nowrap;
-}
-
-.desktop-nav .nav-link:hover {
-  color: var(--color-purple-light);
-  background: rgba(124, 58, 237, 0.1);
-}
-
-.desktop-nav .but-link {
-  font-size: 0.75rem;
-  color: var(--color-purple-lighter);
-}
-
-.desktop-nav .nav-divider {
-  width: 1px;
-  height: 20px;
-  background: rgba(124, 58, 237, 0.3);
-  margin: 0 var(--spacing-xs);
-}
-
-/* Contact Form */
-.contact-form {
-  max-width: 600px;
-  margin: 0 auto var(--spacing-xl);
-  background: rgba(124, 58, 237, 0.05);
-  padding: var(--spacing-xl);
-  border-radius: var(--radius-lg);
-  border: 1px solid rgba(124, 58, 237, 0.1);
-}
-
-.form-group {
-  margin-bottom: var(--spacing-md);
-}
-
-.form-group label {
-  display: block;
-  margin-bottom: var(--spacing-xs);
-  font-weight: 600;
-  color: var(--color-purple-lighter);
-}
-
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  padding: var(--spacing-sm) var(--spacing-md);
-  background: rgba(10, 10, 15, 0.5);
-  border: 1px solid rgba(124, 58, 237, 0.3);
-  border-radius: var(--radius-sm);
-  color: var(--color-text-primary);
-  font-family: var(--font-body);
-  font-size: 1rem;
-  transition: var(--transition-base);
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-  outline: none;
-  border-color: var(--color-purple-primary);
-  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.1);
-}
-
-.form-group textarea {
-  min-height: 150px;
-  resize: vertical;
-}
-
-.form-group input.error,
-.form-group textarea.error {
-  border-color: #ef4444;
-}
-
-.honeypot {
-  position: absolute;
-  left: -9999px;
-  width: 1px;
-  height: 1px;
-  opacity: 0;
-}
-
-.form-message {
-  padding: var(--spacing-md);
-  border-radius: var(--radius-sm);
-  margin-bottom: var(--spacing-md);
-  font-weight: 500;
-  display: none;
-}
-
-.form-message.success {
-  background: rgba(34, 197, 94, 0.1);
-  border: 1px solid rgba(34, 197, 94, 0.3);
-  color: #22c55e;
-  display: block;
-}
-
-.form-message.error {
-  background: rgba(239, 68, 68, 0.1);
-  border: 1px solid rgba(239, 68, 68, 0.3);
-  color: #ef4444;
-  display: block;
-}
-
-.btn-submit {
-  width: 100%;
-  padding: var(--spacing-md) var(--spacing-lg);
-  background: linear-gradient(135deg, var(--color-purple-primary), var(--color-purple-bright));
-  color: var(--color-text-primary);
-  border: none;
-  border-radius: var(--radius-md);
-  font-weight: 600;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: var(--transition-base);
-  box-shadow: var(--shadow-glow);
-}
-
-.btn-submit:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 0 30px rgba(124, 58, 237, 0.5);
-}
-
-.btn-submit:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
-  transform: none;
-}
-
-/* Responsive - Desktop Navigation */
-@media (min-width: 1200px) {
-  .desktop-nav {
-    display: flex;
-  }
-  
-  .burger-menu {
-    display: none;
-  }
-}
-
-@media (max-width: 1199px) {
-  .desktop-nav {
-    display: none;
-  }
 }
