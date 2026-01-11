@@ -109,12 +109,17 @@ a {
 }
 
 .nav-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: var(--spacing-sm) var(--spacing-lg);
+  width: 100%;
+  padding: var(--spacing-sm);
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+/* Ensure nav items don't have extra margins */
+.nav-container .logo,
+.nav-container .burger-menu {
+  margin: 0;
 }
 
 .logo {
@@ -140,7 +145,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  padding: 0.5rem;
+  padding: 0;
   z-index: 1001;
   position: relative;
 }
@@ -850,6 +855,211 @@ a {
   .modal-content {
     padding: var(--spacing-lg);
   }
+}
+
+/* Competency Sections (BUT pages) */
+.competency-section {
+  padding: var(--spacing-3xl) 0;
+}
+
+.competency-title {
+  text-align: center;
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-purple-light);
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+}
+
+.competency-subtitle {
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: 1.125rem;
+  margin-bottom: var(--spacing-xl);
+  font-style: italic;
+}
+
+.table-container {
+  overflow-x: auto;
+  margin-bottom: var(--spacing-2xl);
+  border-radius: var(--radius-lg);
+  background: rgba(124, 58, 237, 0.03);
+  padding: var(--spacing-md);
+}
+
+.competency-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--color-bg-primary);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.competency-table thead {
+  background: linear-gradient(
+    135deg,
+    var(--color-purple-dark),
+    var(--color-purple-primary)
+  );
+}
+
+.competency-table th {
+  padding: var(--spacing-md);
+  text-align: left;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  font-size: 1rem;
+  border-bottom: 2px solid var(--color-purple-primary);
+}
+
+.competency-table th:first-child {
+  width: 15%;
+  min-width: 120px;
+}
+
+.competency-table th.status-not-acquired {
+  background: rgba(239, 68, 68, 0.15);
+  border-left: 3px solid #ef4444;
+}
+
+.competency-table th.status-in-progress {
+  background: rgba(251, 191, 36, 0.15);
+  border-left: 3px solid #fbbf24;
+}
+
+.competency-table th.status-acquired {
+  background: rgba(34, 197, 94, 0.15);
+  border-left: 3px solid #22c55e;
+}
+
+.competency-table tbody tr {
+  border-bottom: 1px solid rgba(124, 58, 237, 0.1);
+  transition: var(--transition-base);
+}
+
+.competency-table tbody tr:hover {
+  background: rgba(124, 58, 237, 0.05);
+}
+
+.competency-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.competency-table td {
+  padding: var(--spacing-md);
+  vertical-align: top;
+  line-height: 1.8;
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+}
+
+.competency-table td.ac-label {
+  font-weight: 700;
+  color: var(--color-purple-lighter);
+  background: rgba(124, 58, 237, 0.05);
+  border-right: 2px solid rgba(124, 58, 237, 0.2);
+}
+
+/* Evidence Section */
+.evidence-section {
+  margin-top: var(--spacing-2xl);
+  padding: var(--spacing-xl);
+  background: rgba(124, 58, 237, 0.03);
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(124, 58, 237, 0.1);
+}
+
+.evidence-title {
+  margin-bottom: var(--spacing-lg);
+  color: var(--color-purple-light);
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.evidence-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.evidence-placeholder {
+  aspect-ratio: 16 / 9;
+  background: var(--color-bg-secondary);
+  border: 2px dashed rgba(124, 58, 237, 0.3);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  font-weight: 600;
+  transition: var(--transition-base);
+  cursor: pointer;
+}
+
+.evidence-placeholder:hover {
+  background: rgba(124, 58, 237, 0.08);
+  border-color: var(--color-purple-primary);
+  color: var(--color-purple-light);
+  transform: scale(1.02);
+}
+
+/* Responsive adjustments for competency tables */
+@media (max-width: 1024px) {
+  .table-container {
+    padding: var(--spacing-sm);
+  }
+
+  .competency-table th,
+  .competency-table td {
+    padding: var(--spacing-sm);
+    font-size: 0.85rem;
+  }
+
+  .competency-table th:first-child {
+    min-width: 100px;
+  }
+}
+
+@media (max-width: 768px) {
+  .competency-table {
+    font-size: 0.8rem;
+  }
+
+  .competency-table th,
+  .competency-table td {
+    padding: var(--spacing-xs);
+    font-size: 0.75rem;
+  }
+
+  .evidence-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .competency-title {
+    font-size: 1.5rem;
+  }
+
+  .competency-subtitle {
+    font-size: 1rem;
+  }
+}
+
+/* Text color utilities for competency tables */
+.text-red {
+  color: #ef4444;
+  font-weight: 600;
+}
+
+.text-orange {
+  color: #fbbf24;
+  font-weight: 600;
+}
+
+.text-green {
+  color: #22c55e;
+  font-weight: 600;
 }
 
 /* Scrollbar */

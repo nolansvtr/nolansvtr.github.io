@@ -36,28 +36,522 @@
         </div>
     </header>
 
-    <!-- Main Content -->
+    <!-- Hero Section -->
     <section class="hero" style="min-height: 60vh;">
         <div class="hero-background"></div>
         <div class="container">
             <div class="hero-content">
                 <h1 class="hero-title">
-                    <span class="gradient-text">Bachelor Universitaire de Technologie (BUT) 2</span>
+                    <span class="gradient-text">BUT 2 - Niveau 2</span>
                 </h1>
-                <p class="hero-subtitle">Deuxième année de Bachelor Universitaire de Technologie (BUT) Informatique</p>
+                <p class="hero-subtitle">Deuxième année de Bachelor Universitaire de Technologie Informatique</p>
                 <p class="hero-description">
-                    Cette page présentera les compétences et connaissances acquises durant la deuxième année.
+                    Niveau 2 : Maîtrise approfondie des compétences - De l'exigence à l'application complète
                 </p>
             </div>
         </div>
     </section>
 
-    <section class="section">
+    <!-- Compétence 1 -->
+    <section class="section competency-section">
         <div class="container">
-            <div class="about-content" style="text-align: center;">
-                <p style="font-size: 1.25rem; color: var(--color-text-muted);">
-                    Contenu en cours de préparation...
-                </p>
+            <h2 class="competency-title">Compétence 1 : Réaliser un développement d'application</h2>
+            <p class="competency-subtitle">Niveau 2 : Partir des exigences et aller jusqu'à une application complète</p>
+            
+            <div class="table-container">
+                <table class="competency-table">
+                    <thead>
+                        <tr>
+                            <th>AC</th>
+                            <th class="status-not-acquired">Non Acquis</th>
+                            <th class="status-in-progress">En cours d'Acquisition</th>
+                            <th class="status-acquired">Acquis</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="ac-label">AC 1 : Spécifications</td>
+                            <td>• Confusion entre interface et règle métier.<br>
+                                • Incapacité à identifier les acteurs.<br>
+                                • Ignore les contraintes techniques (OS).</td>
+                            <td>• <span class="text-orange">Liste les fonctions sans aucune priorité.</span><br>
+                                • <span class="text-orange">Oublie les cas limites d'utilisation.</span><br>
+                                • Absence de critères d'acceptation clairs.</td>
+                            <td>• Rédige des User Stories exhaustives.<br>
+                                • Formalise les contraintes chiffrées.<br>
+                                • <span class="text-green">Dossier validé formellement par le client.</span></td>
+                        </tr>
+                        <tr>
+                            <td class="ac-label">AC 2 : Ergonomie</td>
+                            <td>• Choix visuels rendant le texte illisible.<br>
+                                • Navigation bloquante ou impasses.<br>
+                                • Absence de validation des formulaires.</td>
+                            <td>• Design incohérent entre les pages.<br>
+                                • <span class="text-orange">Interface non responsive (mobile).</span><br>
+                                • Messages d'erreur purement techniques.</td>
+                            <td>• <span class="text-green">Charte graphique et standards accessibilité.</span><br>
+                                • Parcours utilisateur fluide (UX).<br>
+                                • <span class="text-green">Gestion intuitive des retours (feedbacks).</span></td>
+                        </tr>
+                        <tr>
+                            <td class="ac-label">AC 3 : Bonnes pratiques</td>
+                            <td>• Code monolithique (un seul fichier).<br>
+                                • Nommage des variables non significatif.<br>
+                                • Absence de gestion de version (Git).</td>
+                            <td>• Utilise des objets avec un fort couplage.<br>
+                                • <span class="text-orange">Commits Git rares ou messages flous.</span><br>
+                                • Documentation non normalisée.</td>
+                            <td>• <span class="text-green">Architecture modulaire (SOLID, MVC).</span><br>
+                                • <span class="text-green">Usage de Git Flow et commits atomiques.</span><br>
+                                • Code auto-documenté et Javadoc complète.</td>
+                        </tr>
+                        <tr>
+                            <td class="ac-label">AC 4 : Tests</td>
+                            <td>• Le test se limite à la compilation.<br>
+                                • Ignore la notion de bug reproductible.<br>
+                                • Teste uniquement le chemin idéal.</td>
+                            <td>• <span class="text-orange">Tests unitaires sur les cas simples.</span><br>
+                                • <span class="text-orange">Pas de simulation (Mocks) de base de données.</span><br>
+                                • Dépendance excessive aux tests manuels.</td>
+                            <td>• Stratégie de tests couvrant 70% du métier.<br>
+                                • Automatise les tests d'intégration.<br>
+                                • <span class="text-green">Rapport de tests prouvant la robustesse.</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="evidence-section">
+                <h3 class="evidence-title">📁 Preuves</h3>
+                <div class="evidence-grid">
+                    <div class="evidence-placeholder">
+                        <span>Insérer preuve 1</span>
+                    </div>
+                    <div class="evidence-placeholder">
+                        <span>Insérer preuve 2</span>
+                    </div>
+                    <div class="evidence-placeholder">
+                        <span>Insérer preuve 3</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compétence 2 -->
+    <section class="section competency-section" style="background: var(--color-bg-secondary);">
+        <div class="container">
+            <h2 class="competency-title">Compétence 2 : Optimiser des applications</h2>
+            <p class="competency-subtitle">Niveau 2 : Sélectionner les algorithmes adéquats pour répondre à un problème donné</p>
+            
+            <div class="table-container">
+                <table class="competency-table">
+                    <thead>
+                        <tr>
+                            <th>AC</th>
+                            <th class="status-not-acquired">Non Acquis</th>
+                            <th class="status-in-progress">En cours d'Acquisition</th>
+                            <th class="status-acquired">Acquis</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="ac-label">AC 1 : Structures</td>
+                            <td>• Utilise des tableaux fixes pour tout usage.<br>
+                                • Ne connaît pas les types abstraits.<br>
+                                • Choix de types inadaptés.</td>
+                            <td>• <span class="text-orange">Emploie des List/Map sans connaître le coût.</span><br>
+                                • Utilisation de boucles imbriquées inutiles.<br>
+                                • Ne sait pas quand utiliser un Set.</td>
+                            <td>• Justifie le choix par la complexité (O(n)).<br>
+                                • <span class="text-green">Mise en œuvre de structures personnalisées.</span><br>
+                                • <span class="text-green">Optimise la RAM pour les volumes massifs.</span></td>
+                        </tr>
+                        <tr>
+                            <td class="ac-label">AC 2 : Techniques algo.</td>
+                            <td>• Solutions "Force Brute" systématiques.<br>
+                                • <span class="text-red">Incapable de décomposer un problème.</span><br>
+                                • Ne connaît aucun algorithme de tri standard.</td>
+                            <td>• Applique des algos complexes sans les régler.<br>
+                                • Ne sait pas mesurer le temps d'exécution.<br>
+                                • <span class="text-orange">Absence de gestion des cas limites.</span></td>
+                            <td>• <span class="text-green">Implémente des méthodes d'IA ou d'optimisation.</span><br>
+                                • Adapte l'algo pour respecter un temps contraint.<br>
+                                • <span class="text-green">Analyse comparative de plusieurs approches.</span></td>
+                        </tr>
+                        <tr>
+                            <td class="ac-label">AC 3 : Sécurisation</td>
+                            <td>• Mots de passe stockés en clair partout.<br>
+                                • Code exposé aux injections SQL par défaut.<br>
+                                • Ignore les vulnérabilités web (OWASP).</td>
+                            <td>• Utilise la sécurité sans comprendre les concepts.<br>
+                                • <span class="text-orange">Validation uniquement côté client.</span><br>
+                                • <span class="text-orange">Ne surveille pas les logs pour les intrusions.</span></td>
+                            <td>• <span class="text-green">Cryptographie robuste (AES, RSA) intégrée.</span><br>
+                                • Sécurisation "By Design" dès la conception.<br>
+                                • Durcissement (hardening) de la configuration.</td>
+                        </tr>
+                        <tr>
+                            <td class="ac-label">AC 4 : Impact env.</td>
+                            <td>• Ignore l'impact énergétique du logiciel.<br>
+                                • Produit du code sollicitant le CPU à 100%.<br>
+                                • Aucun souci de la durabilité du matériel.</td>
+                            <td>• <span class="text-orange">Connaît la théorie Green IT sans la mesurer.</span><br>
+                                • <span class="text-orange">Ne libère pas correctement les ressources.</span><br>
+                                • N'envisage pas la compatibilité matériel ancien.</td>
+                            <td>• Optimisation prouvée CPU/RAM/Réseau.<br>
+                                • Analyse d'impact sociétal et éthique rédigée.<br>
+                                • <span class="text-green">Choix technologiques bas-carbone justifiés.</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="evidence-section">
+                <h3 class="evidence-title">📁 Preuves</h3>
+                <div class="evidence-grid">
+                    <div class="evidence-placeholder">
+                        <span>Insérer preuve 1</span>
+                    </div>
+                    <div class="evidence-placeholder">
+                        <span>Insérer preuve 2</span>
+                    </div>
+                    <div class="evidence-placeholder">
+                        <span>Insérer preuve 3</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compétence 3 -->
+    <section class="section competency-section">
+        <div class="container">
+            <h2 class="competency-title">Compétence 3 : Administrer des systèmes informatiques</h2>
+            <p class="competency-subtitle">Niveau 2 : Déployer des services dans une architecture réseau</p>
+            
+            <div class="table-container">
+                <table class="competency-table">
+                    <thead>
+                        <tr>
+                            <th>AC</th>
+                            <th class="status-not-acquired">Non Acquis</th>
+                            <th class="status-in-progress">En cours d'Acquisition</th>
+                            <th class="status-acquired">Acquis</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="ac-label">AC 1 : Applis comm.</td>
+                            <td>• Ne comprend pas le modèle Client-Serveur.<br>
+                                • Incapable d'ouvrir une socket réseau.<br>
+                                • Ne connaît pas les adresses IP ou ports.</td>
+                            <td>• Communication synchrone bloquant l'appli.<br>
+                                • <span class="text-orange">Protocole instable (crash sur mauvaise donnée).</span><br>
+                                • Serveur limité à un seul client à la fois.</td>
+                            <td>• <span class="text-green">Protocole applicatif robuste et multitâche.</span><br>
+                                • Implémente des API REST avec codes d'état.<br>
+                                • <span class="text-green">Résilience face aux coupures réseau.</span></td>
+                        </tr>
+                        <tr>
+                            <td class="ac-label">AC 2 : Virtualisation</td>
+                            <td>• Installe tout "en dur" sur son PC.<br>
+                                • <span class="text-red">Ne sait pas ce qu'est un conteneur.</span><br>
+                                • Confusion entre VM et Conteneur.</td>
+                            <td>• Utilise Docker sans comprendre les fichiers.<br>
+                                • Pas de persistance (données perdues).<br>
+                                • <span class="text-orange">Ne sait pas lier deux conteneurs entre eux.</span></td>
+                            <td>• <span class="text-green">Création autonome de Docker-Compose.</span><br>
+                                • Configuration avancée des réseaux isolés.<br>
+                                • <span class="text-green">Orchestration automatisée d'infra complète.</span></td>
+                        </tr>
+                        <tr>
+                            <td class="ac-label">AC 3 : Sécurisation</td>
+                            <td>• Laisse tous les ports ouverts sans filtrage.<br>
+                                • Utilise des mots de passe par défaut.<br>
+                                • Aucune journalisation (logs) des accès.</td>
+                            <td>• Firewall avec des règles trop permissives.<br>
+                                • <span class="text-orange">Utilisation HTTP simple sans chiffrement.</span><br>
+                                • <span class="text-orange">Ne surveille pas les logs pour les intrusions.</span></td>
+                            <td>• Mise en œuvre du chiffrement SSL/TLS.<br>
+                                • <span class="text-green">Principe du moindre privilège appliqué.</span><br>
+                                • Durcissement (hardening) de la configuration.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="evidence-section">
+                <h3 class="evidence-title">📁 Preuves</h3>
+                <div class="evidence-grid">
+                    <div class="evidence-placeholder">
+                        <span>Insérer preuve 1</span>
+                    </div>
+                    <div class="evidence-placeholder">
+                        <span>Insérer preuve 2</span>
+                    </div>
+                    <div class="evidence-placeholder">
+                        <span>Insérer preuve 3</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compétence 4 -->
+    <section class="section competency-section" style="background: var(--color-bg-secondary);">
+        <div class="container">
+            <h2 class="competency-title">Compétence 4 : Gérer des données de l'information</h2>
+            <p class="competency-subtitle">Niveau 2 : Optimiser une base de données, interagir avec une application et mettre en œuvre la sécurité</p>
+            
+            <div class="table-container">
+                <table class="competency-table">
+                    <thead>
+                        <tr>
+                            <th>AC</th>
+                            <th class="status-not-acquired">Non Acquis</th>
+                            <th class="status-in-progress">En cours d'Acquisition</th>
+                            <th class="status-acquired">Acquis</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="ac-label">AC 1 : Optimisation</td>
+                            <td>• Schéma incohérent (une seule table géante).<br>
+                                • Absence de clés primaires ou étrangères.<br>
+                                • Ne sait pas ce qu'est une jointure SQL.</td>
+                            <td>• Modèle fonctionnel mais lent sur gros volumes.<br>
+                                • <span class="text-orange">Requêtes SQL avec des jointures inutiles.</span><br>
+                                • Présence de redondances entre les tables.</td>
+                            <td>• <span class="text-green">Modèle relationnel optimisé (3NF).</span><br>
+                                • <span class="text-green">Création d'index et vues pour la performance.</span><br>
+                                • Usage de SQL intégré (PDO) sécurisé.</td>
+                        </tr>
+                        <tr>
+                            <td class="ac-label">AC 2 : Confidentialité</td>
+                            <td>• Stocke des données privées sans protection.<br>
+                                • Ne connaît pas l'acronyme RGPD.<br>
+                                • Aucune sauvegarde des données prévue.</td>
+                            <td>• <span class="text-orange">Transactions SQL sur opérations simples.</span><br>
+                                • <span class="text-orange">Droits  d'accès identiques pour tous les profils.</span><br>
+                                • Politique de sauvegarde jamais testée.</td>
+                            <td>• Intégrité via transactions multi-tables.<br>
+                                • Conformité RGPD (anonymisation, registre).<br>
+                                • <span class="text-green">Protection des données au repos et transit.</span></td>
+                        </tr>
+                        <tr>
+                            <td class="ac-label">AC 3 : Restitution</td>
+                            <td>• Affiche les colonnes de base brutes.<br>
+                                • Utilisateur fait les calculs manuellement.<br>
+                                • Aucune option de tri ou de recherche.</td>
+                            <td>• Présentation en listes sans pagination.<br>
+                                • <span class="text-orange">Graphiques simples mais peu lisibles.</span><br>
+                                • <span class="text-orange">Calculs de synthèse faits côté code client.</span></td>
+                            <td>• <span class="text-green">Dashboards interactifs d'aide à la décision.</span><br>
+                                • Requêtes d'agrégation SQL optimisées.<br>
+                                • Visualisation adaptée aux profils métiers.</td>
+                        </tr>
+                        <tr>
+                            <td class="ac-label">AC 4 : Hétérogénéité</td>
+                            <td>• Bloqué si le format change.<br>
+                                • Ne sait pas parser un fichier externe.<br>
+                                • Ignore la notion de structure externe.</td>
+                            <td>• <span class="text-orange">Importation avec pertes de caractères.</span><br>
+                                • Échec de fusion de sources (doublons).<br>
+                                • <span class="text-orange">Ne gère pas les valeurs manquantes (null).</span></td>
+                            <td>• Scripts automatisés de nettoyage (ETL).<br>
+                                • <span class="text-green">Croisement SQL / API / Fichiers plats.</span><br>
+                                • Normalisation complète de sources disparates.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="evidence-section">
+                <h3 class="evidence-title">📁 Preuves</h3>
+                <div class="evidence-grid">
+                    <div class="evidence-placeholder">
+                        <span>Insérer preuve 1</span>
+                    </div>
+                    <div class="evidence-placeholder">
+                        <span>Insérer preuve 2</span>
+                    </div>
+                    <div class="evidence-placeholder">
+                        <span>Insérer preuve 3</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compétence 5 -->
+    <section class="section competency-section">
+        <div class="container">
+            <h2 class="competency-title">Compétence 5 : Conduire un projet</h2>
+            <p class="competency-subtitle">Niveau 2 : Appliquer une démarche de suivi de projet en fonction des besoins métiers</p>
+            
+            <div class="table-container">
+                <table class="competency-table">
+                    <thead>
+                        <tr>
+                            <th>AC</th>
+                            <th class="status-not-acquired">Non Acquis</th>
+                            <th class="status-in-progress">En cours d'Acquisition</th>
+                            <th class="status-acquired">Acquis</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="ac-label">AC 1 : Processus</td>
+                            <td>• Ne sait pas expliquer le métier du client.<br>
+                                • Ignore qui sont les futurs utilisateurs.<br>
+                                • Ne voit pas les enjeux du projet.</td>
+                            <td>• <span class="text-orange">Identifie les étapes sans les exceptions.</span><br>
+                                • Modélisation flux (BPMN) illogique.<br>
+                                • <span class="text-orange">Identifie les acteurs sans leurs rôles.</span></td>
+                            <td>• Cartographie exhaustive des flux (BPMN).<br>
+                                • <span class="text-green">Identification précise des gains de valeur.</span><br>
+                                • Analyse des points critiques organisationnels.</td>
+                        </tr>
+                        <tr>
+                            <td class="ac-label">AC 2 : Formalisation</td>
+                            <td>• Accepte toute demande sans vérification.<br>
+                                • Aucun écrit après réunion client.<br>
+                                • Ne sait pas ce qu'est un cahier des charges.</td>
+                            <td>• <span class="text-orange">Besoins listés sans distinction d'importance.</span><br>
+                                • Pas de définition de fin de tâche (DoD).<br>
+                                • Absence de scénarios de validation client.</td>
+                            <td>• Cahier des charges structuré et validé.<br>
+                                • <span class="text-green">Spécifications techniques non ambiguës.</span><br>
+                                • <span class="text-green">Référentiel d'exigences partagé et immuable.</span></td>
+                        </tr>
+                        <tr>
+                            <td class="ac-label">AC 3 : Faisabilité</td>
+                            <td>• Se lance sans estimer le temps.<br>
+                                • Pense que tout est faisable en un jour.<br>
+                                • Ignore les coûts logiciels ou serveurs.</td>
+                            <td>• <span class="text-orange">Oublie le temps de test et de doc.</span><br>
+                                • Ignore les licences juridiques des outils.<br>
+                                • <span class="text-orange">Pas d'analyse des risques (départ, panne).</span></td>
+                            <td>• <span class="text-green">Étude de faisabilité multicritères complète.</span><br>
+                                • Solutions alternatives en cas de blocage.<br>
+                                • Calcul réaliste du retour sur investissement.</td>
+                        </tr>
+                        <tr>
+                            <td class="ac-label">AC 4 : Suivi</td>
+                            <td>• Ne sait pas répondre à "où en es-tu ?".<br>
+                                • Découvre les retards le jour de livraison.<br>
+                                • Travaille sans aucun outil de pilotage.</td>
+                            <td>• Utilise un Kanban mais sans mise à jour.<br>
+                                • <span class="text-orange">Répartition inégale des tâches en équipe.</span><br>
+                                • <span class="text-orange">Ne sait pas réagir à un retard de tâche.</span></td>
+                            <td>• Pilotage via indicateurs (Gantt, Burndown).<br>
+                                • Ajuste le périmètre pour livrer à temps.<br>
+                                • <span class="text-green">Gestion proactive des ressources et délais.</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="evidence-section">
+                <h3 class="evidence-title">📁 Preuves</h3>
+                <div class="evidence-grid">
+                    <div class="evidence-placeholder">
+                        <span>Insérer preuve 1</span>
+                    </div>
+                    <div class="evidence-placeholder">
+                        <span>Insérer preuve 2</span>
+                    </div>
+                    <div class="evidence-placeholder">
+                        <span>Insérer preuve 3</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compétence 6 -->
+    <section class="section competency-section" style="background: var(--color-bg-secondary);">
+        <div class="container">
+            <h2 class="competency-title">Compétence 6 : Collaborer au sein d'une équipe</h2>
+            <p class="competency-subtitle">Niveau 2 : Situer son rôle et ses missions au sein d'une équipe informatique</p>
+            
+            <div class="table-container">
+                <table class="competency-table">
+                    <thead>
+                        <tr>
+                            <th>AC</th>
+                            <th class="status-not-acquired">Non Acquis</th>
+                            <th class="status-in-progress">En cours d'Acquisition</th>
+                            <th class="status-acquired">Acquis</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="ac-label">AC 1 : Structure</td>
+                            <td>• Ignore la différence ESN, DSI ou Startup.<br>
+                                • Pense que l'informatique est isolée.<br>
+                                • Ne connaît pas les rôles PO ou Scrum.</td>
+                            <td>• <span class="text-orange">Connaît les métiers sans leurs interactions.</span><br>
+                                • Ne perçoit pas la dimension économique.<br>
+                                • Comprend son équipe mais pas son client.</td>
+                            <td>• Analyse fine de la stratégie informatique.<br>
+                                • <span class="text-green">Comprend comment son code crée du gain.</span><br>
+                                • <span class="text-green">Identifie les enjeux politiques internes.</span></td>
+                        </tr>
+                        <tr>
+                            <td class="ac-label">AC 2 : Intégration</td>
+                            <td>• Refuse les outils imposés (Git, Slack).<br>
+                                • Travaille seul sans partager.<br>
+                                • Ne respecte pas les horaires collectifs.</td>
+                            <td>• Participe aux rituels de manière passive.<br>
+                                • <span class="text-orange">Utilise Git sans lire le code des autres.</span><br>
+                                • <span class="text-orange">Attend les ordres sans être proactif.</span></td>
+                            <td>• Adoption complète de GitFlow et Scrum.<br>
+                                • Force de proposition sur les méthodes.<br>
+                                • <span class="text-green">Intégration naturelle en Pair Programming.</span></td>
+                        </tr>
+                        <tr>
+                            <td class="ac-label">AC 3 : Interpersonnel</td>
+                            <td>• Réagit agressivement aux critiques.<br>
+                                • Cache ses erreurs par peur du jugement.<br>
+                                • Ne partage aucune information utile.</td>
+                            <td>• Écoute les feedbacks sans agir dessus.<br>
+                                • <span class="text-orange">Aide les autres seulement si sollicité.</span><br>
+                                • Ne reformule pas pour valider l'accord.</td>
+                            <td>• <span class="text-green">Posture de facilitateur pour les pairs.</span><br>
+                                • Communication bienveillante et constructive.<br>
+                                • <span class="text-green">Pratique l'écoute active et la médiation.</span></td>
+                        </tr>
+                        <tr>
+                            <td class="ac-label">AC 4 : Rendre compte</td>
+                            <td>• Rapports illisibles (logs bruts).<br>
+                                • Ne prévient jamais quand il est bloqué.<br>
+                                • Incapable de résumer son travail hebdo.</td>
+                            <td>• <span class="text-orange">Rapports d'activité sans hiérarchie d'info.</span><br>
+                                • <span class="text-orange">Discours trop technique pour le client.</span><br>
+                                • Informe du retard au dernier moment.</td>
+                            <td>• Synthétise les problèmes en points d'action.<br>
+                                • Adaptation parfaite selon l'interlocuteur.<br>
+                                • <span class="text-green">Production de synthèses pro et datées.</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="evidence-section">
+                <h3 class="evidence-title">📁 Preuves</h3>
+                <div class="evidence-grid">
+                    <div class="evidence-placeholder">
+                        <span>Insérer preuve 1</span>
+                    </div>
+                    <div class="evidence-placeholder">
+                        <span>Insérer preuve 2</span>
+                    </div>
+                    <div class="evidence-placeholder">
+                        <span>Insérer preuve 3</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
