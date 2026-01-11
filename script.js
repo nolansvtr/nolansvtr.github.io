@@ -165,3 +165,48 @@ window.addEventListener('scroll', () => {
         heroBackground.style.transform = `translateY(${scrolled * 0.5}px)`;
     }
 });
+
+// Contact Form Handling
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+    contactForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        
+        const formData = new FormData(contactForm);
+        const submitBtn = document.getElementById('submitBtn');
+        const formMessage = document.getElementById('formMessage');
+        
+        // Disable submit button
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Envoi en cours...';
+        
+        // Hide previous messages
+        formMessage.className = 'form-message';
+        formMessage.textContent = '';
+        
+        try {
+            const response = await fetch('contact_handler.php', {
+                method: 'POST',
+                body: formData
+            });
+            
+            const result = await response.json();
+            
+            if (result.success) {
+                formMessage.className = 'form-message success';
+                formMessage.textContent = result.message;
+                contactForm.reset();
+            } else {
+                formMessage.className = 'form-message error';
+                formMessage.textContent = result.message;
+            }
+        } catch (error) {
+            formMessage.className = 'form-message error';
+            formMessage.textContent = 'Une erreur est survenue. Veuillez réessayer.';
+        } finally {
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Envoyer le message';
+        }
+    });
+}
+
