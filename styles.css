@@ -983,6 +983,13 @@ a {
   gap: var(--spacing-lg);
 }
 
+.evidence-grid-fixed {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-lg);
+}
+
+
 .evidence-placeholder {
   aspect-ratio: 16 / 9;
   background: var(--color-bg-secondary);
@@ -1063,8 +1070,9 @@ a {
 }
 
 /* Evidence images - limit size */
-.evidence-grid img {
-  max-width: 600px;
+.evidence-grid img,
+.evidence-grid-fixed img {
+  max-width: 400px;
   width: 100%;
   height: auto;
   margin: 0 auto;
