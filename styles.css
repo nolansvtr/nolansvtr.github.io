@@ -145,21 +145,26 @@ a {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  padding: 0;
+  padding: 8px;
   z-index: 1001;
   position: relative;
+  width: 32px;
+  height: 32px;
+  align-items: center;
+  justify-content: center;
 }
 
 .burger-menu span {
-  width: 25px;
-  height: 3px;
+  width: 22px;
+  height: 2px;
   background: var(--color-text-primary);
   border-radius: var(--radius-full);
   transition: var(--transition-base);
+  display: block;
 }
 
 .burger-menu.active span:nth-child(1) {
-  transform: rotate(45deg) translate(6px, 6px);
+  transform: rotate(45deg) translate(5px, 5px);
 }
 
 .burger-menu.active span:nth-child(2) {
@@ -167,7 +172,7 @@ a {
 }
 
 .burger-menu.active span:nth-child(3) {
-  transform: rotate(-45deg) translate(6px, -6px);
+  transform: rotate(-45deg) translate(5px, -5px);
 }
 
 .mobile-menu {

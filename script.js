@@ -18,6 +18,7 @@ menuLinks.forEach(link => {
     });
 });
 
+
 // Close menu when clicking outside
 document.addEventListener('click', (e) => {
     if (mobileMenu.classList.contains('active') && 
