@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Application de gestion de tâches moderne et élégante avec mode sombre, filtres et sauvegarde automatique">
+    <meta name="keywords" content="todo, todolist, tâches, gestionnaire de tâches, productivité">
+    <meta name="author" content="Votre Nom">
+    <title>TodoList - Gestionnaire de Tâches Moderne</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <h1 class="title">
+                    <span class="title-icon">✨</span>
+                    <span class="title-text">Ma TodoList</span>
+                </h1>
+                <button id="darkModeToggle" class="dark-mode-toggle" aria-label="Basculer le mode sombre">
+                    <span class="sun-icon">☀️</span>
+                    <span class="moon-icon">🌙</span>
+                </button>
+            </div>
+        </header>
+        <div class="add-task-section">
+            <div class="input-wrapper">
+                <input 
+                    type="text" 
+                    id="taskInput" 
+                    class="task-input" 
+                    placeholder="Ajouter une nouvelle tâche..."
+                    aria-label="Nouvelle tâche"
+                    autocomplete="off"
+                >
+                <button id="addTaskBtn" class="add-btn" aria-label="Ajouter une tâche">
+                    <span class="add-icon">+</span>
+                    <span class="add-text">Ajouter</span>
+                </button>
+            </div>
+        </div>
+        <div class="controls">
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">
+                    Toutes
+                    <span class="filter-count" id="allCount">0</span>
+                </button>
+                <button class="filter-btn" data-filter="active">
+                    À faire
+                    <span class="filter-count" id="activeCount">0</span>
+                </button>
+                <button class="filter-btn" data-filter="completed">
+                    Terminées
+                    <span class="filter-count" id="completedCount">0</span>
+                </button>
+            </div>
+        </div>
+        <ul id="taskList" class="task-list"></ul>
+        <div id="emptyState" class="empty-state">
+            <div class="empty-icon">📝</div>
+            <p class="empty-text">Aucune tâche pour le moment</p>
+            <p class="empty-subtext">Ajoutez votre première tâche pour commencer !</p>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>

@@ -158,7 +158,6 @@ function highlightNavOnScroll() {
 
 window.addEventListener('scroll', highlightNavOnScroll);
 
-// Parallax effect for hero background
 window.addEventListener('scroll', () => {
     const scrolled = window.pageYOffset;
     const heroBackground = document.querySelector('.hero-background');
